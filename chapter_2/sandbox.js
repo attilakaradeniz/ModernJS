@@ -1,7 +1,28 @@
-// 01:02:20  NULL & undefined
-//let age;
-let age = null;
+// 01:18:50  Type conversion
+let score = '100';
 
-console.log(age , age + 3, `the age is ${age}`);
-console.log(true, false, 'true', 'false');
+// console.log(score + 1);
+// console.log(parseInt(score) + 1); // parseInt
+
+// console.log(typeof score);
+
+// score = Number(score);
+
+// console.log(score + 1);
+// console.log(typeof score);
+
+// let result = Number('hellori');
+// let result = String(50);
+
+
+// truthy & falsy
+// let result = Boolean(100);  
+let result = Boolean(0); // falsy
+result = Boolean('0'); // truthy
+result = Boolean(''); // falsy
+
+
+console.log(result, typeof result);
+
+
 
