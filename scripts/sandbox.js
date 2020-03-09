@@ -18,8 +18,8 @@ $(document).ready(function () {
     // 003350
     let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li']
 
-    people.forEach(function(p){
-        console.log(p);
+    people.forEach((person) =>{
+        console.log(person);
     });
 
 
