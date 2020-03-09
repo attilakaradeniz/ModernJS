@@ -19,6 +19,7 @@ $(document).ready(function () {
         return 3.14 * radius**2
     } 
 
+    console.log(calcArea(5));
     // arrow function
     
 

@@ -1,7 +1,7 @@
 /*
 
 // https://www.youtube.com/watch?v=FhguwBJeqWs&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc&index=2
-
+    // Modern JavaScript The Net Ninja
 $(document).ready(function(){
 
     let age = 25;
@@ -220,7 +220,7 @@ console.log(age === '25'); // is age same value & type?
 
 
 ////////////////////////////////////////////////////////////
-// 01:18:50  Type conversion
+// #2 01:18:50  Type conversion
 let score = '100';
 
 // console.log(score + 1);
@@ -233,7 +233,7 @@ let score = '100';
 // console.log(score + 1);
 // console.log(typeof score);
 
-// let result = Number('hellori');
+// let result = Number('hellori'); // result NaN
 // let result = String(50);
 
 
@@ -247,6 +247,159 @@ result = Boolean(''); // falsy
 console.log(result, typeof result);
 
 //////////////////////////////////////////////////////
+// Last things on #2
+$(document).ready(function(){
+    /////////
+
+    let pTagJquery = $("#h1ID");
+
+    pTagJquery.css({position: "relative"});
+    pTagJquery.animate({left : 100});
+
+    pTagJquery.on("click", function(){
+        pTagJquery.animate({left: -100});
+        pTagJquery.animate({left : 100});
+    });
+
+
+    console.log(typeof pTagJquery);
+
+    /////////
+});
+//////////////////////////////////////////////////////
+// #3 00:00:00  Control Flow...
+
+    //console.log(typeof pTagJquery); // gives "Object"
+
+    // // #3 00:00:00  Control Flow...
+    // for loops
+    // for(let i=0;i<5;i++){
+    //     console.log('in loop: ', i);
+    // }    
+    // console.log('loop is over!');
+
+    // const names = ['ati', 'kati', 'betty'];
+    // for(let i=0; i<names.length;i++){
+    //     console.log(i+1+'.' + ' element of name array is : ' + names[i]);
+
+    // }
+    // const names = ['ati', 'kati', 'betty'];
+    // for (let i = 0; i < names.length; i++) {
+    //     let html = `<div>${names[i]}</div>`;
+    //     console.log(html);
+    // }
+    // #3 001032 iteration(terminology)
+
+    // #3 001048 while loop
+    // let i = 0;
+    // while(i<5){
+    //     console.log('in loop: ', i);
+    //     i++; // if you forget this, you'll get an infinite loop!!!
+    // }
+
+    // #3 001500 while loop
+    let i = 0;
+    do{
+        console.log('in loop: ', i);
+        i++; // if you forget this, you'll get an infinite loop!!!
+    } 
+    while(i<5);
+/////////////////////////////////////////
+    // #3 001745 if
+
+    //
+        // #3 003500 // break and continue
+    const scores =  [50, 25,0,30,100,20,10]; 
+    
+    // for(let i=0;i<scores.length;i++){
+    //     console.log('your score is: ' + scores[i]);
+    // } 
+    
+    // for(let i=0;i<scores.length;i++){
+    //     console.log('your score is: ' + scores[i]);
+    //     if(scores[i] === 100){
+    //         console.log('Conrats! you reached the max!!!');
+    //         break;
+    //     }
+    // } 
+
+    for(let i=0;i<scores.length;i++){
+
+        if(scores[i] === 0){
+            continue;
+        }
+        console.log('your score is: ' + scores[i]);
+        if(scores[i] === 100){
+            console.log('Conrats! you reached the max!!!');
+            break;
+        }
+    } 
+    /////////
+    ///////////////////////////////////////////
+    // #3 003900 Switch
+    // Switch uses strict equality !!!!!!!!!!
+
+    //////////////////////////////////////////
+        // #4 Chapter 4 Functions & Methods
+    //Functions & Methods (there is a little distinction)
+    
+    // function declaration
+    function greet(){
+        console.log('hello there');
+    }
+
+    // function expression
+    const speak = function(){
+       console.log('good day!'); 
+    }; // this is a expression thats why semi colon
+
+
+    // greet(); // calling || invoking the function
+    // greet();
+    // greet();
+
+    speak();
+   
+    // #4 000620 hoisting 
+    // hoisting WORKS with function DECLARATIONS
+    // but it DOESN'T WORD with function EXPRESSIONS!!
+    
+
+        // #4 Chapter 4 Functions & Methods
+    // let name = 'ati';
+    // const speak = function(name = 'luigi', time = 'night') {      // ufnction parameter
+    //     console.log(`Good ${time} ${name}!`); // TEMPLATE STRING
+    // };
+    
+    // //speak('ati'); // argument
+    // speak('ati', 'day');
+
+    // const  calcArea = function(radius){
+    //     let area = 3.14 * radius**2;
+    //     return area;
+    // }
+
+    const  calcArea = function(radius){
+        return 3.14 * radius**2;
+    }
+
+    //console.log(calcArea(5));
+    const area = calcArea(5);
+    console.log(area);
+
+    /////////////////////////////////////////
+    
+
+
+
+
+
+    
+
+
+
+
+
 
 
 
