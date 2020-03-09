@@ -388,6 +388,15 @@ $(document).ready(function(){
     console.log(area);
 
     /////////////////////////////////////////
+    // #4 001810 regular functions & arrow functions
+    const calcArea = function(radius){
+        return 3.14 * radius**2
+    } 
+
+    console.log(calcArea(5));
+    // arrow function
+    
+
     
 
 

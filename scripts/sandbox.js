@@ -14,14 +14,13 @@ $(document).ready(function () {
     });
 
     ///////////////////////////////////////////////
-    // #4 001810 regular functions & arrow functions
-    const calcArea = function(radius){
-        return 3.14 * radius**2
-    } 
+    // #4 003043 callback function 
+    // 003350
+    let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li']
 
-    console.log(calcArea(5));
-    // arrow function
-    
+    people.forEach(function(p){
+        console.log(p);
+    });
 
 
 
