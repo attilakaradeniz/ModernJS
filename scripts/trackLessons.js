@@ -395,6 +395,10 @@ $(document).ready(function(){
 
     console.log(calcArea(5));
     // arrow function
+    const calcArea = readius => 3.14 * radius**2; 
+    
+    const area = calcArea(5);
+    console.log('area is: ', area);
     
 
     

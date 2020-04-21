@@ -1,0 +1,30 @@
+.trans{
+    
+    transition: background-color 0.7s;
+}
+
+.trans:hover{
+    background-color: #fdaaaa;
+}
+/* 
+body{
+    transition: background-color 2.9s;
+}
+
+body:hover{
+    background-color: rgb(236, 28, 73);
+} */
+
+.transi{
+    text-align: end;
+    width: 50px;
+    /* background-color:  rgb(236, 28, 73); */
+}
+.transi{
+    transition: width 0.5s;
+}
+
+.transi:hover{
+    width: 900px;
+}
+
